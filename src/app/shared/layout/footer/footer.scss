@@ -1,0 +1,11 @@
+@use '../../../../styles/variables' as v;
+
+.footer {
+  padding: v.$space-md;
+  border-top: 1px solid v.$color-chrome;
+  text-align: center;
+}
+
+.footer__text {
+  margin: 0;
+}

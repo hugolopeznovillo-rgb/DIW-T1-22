@@ -1,0 +1,42 @@
+@use '../../../../styles/variables' as v;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-md;
+  padding: v.$space-md;
+  border-bottom: 1px solid v.$color-chrome;
+}
+
+.header__brand {
+  font-family: v.$font-heading;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: v.$space-sm v.$space-md;
+}
+
+.header__link {
+  padding-block: v.$space-sm;
+  text-decoration: none;
+}
+
+.header__link:hover,
+.header__link--active {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
